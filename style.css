@@ -1,0 +1,19 @@
+h1  {
+    color: white
+}
+body {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: grey
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    text-decoration-color: grey
+}
