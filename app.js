@@ -1,4 +1,5 @@
-// Array for gif search items
+
+//  Array for gif search items
 
 var topics = ["cat","dog","bird","snake","hamster","spider","turtle","guinea pig","pig","fish"]
 
@@ -39,7 +40,7 @@ $("button").on("click", function()   {
 
                 //P tag creation for rating
 
-                var p = $("<p>").text("Rating " + results[i].rating)
+                var p = $("<p>").text("Rating: " + results[i].rating)
                 
                 // Storing the image gif tag
 
@@ -50,6 +51,12 @@ $("button").on("click", function()   {
                 animalImage.attr("src,", results[i].images.fixed_height.url)
 
                 //Append paragraph and image tag to Div
+                
+                animalDiv.append(p)
+
+                animalDiv(animalImage)
+
+                //Preprend animalDiv to HTML
 
                 $("#gifHere").prepend(animalDiv)
 
