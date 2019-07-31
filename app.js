@@ -15,9 +15,4 @@ var topics = ["cat","dog","bird","snake","hamster","spider","turtle","guinea pig
         $.ajax({
             url: queryURL,
             method: "GET"
-          }).then(function(response) {
-
-            // Div element to hold gif
-            var gifDiv = $("div class='gif'>")
-
-            //
+          }).then(function(response)
