@@ -2,17 +2,26 @@
 
 var topics = ["cat","dog","bird","snake","hamster","spider","turtle","guinea pig","pig","fish"]
 
-    //displayGIF function to display content within HTMl
+//Adding an onclick listener to buttons
+$("button").on("click",function()   {
+    // Data animal property
+    
+    var animal = $(this).attr("data-animal")
 
-    function displayGIF () {
-        var gif =$(this).attr("data-name")
-        var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=s9PHSc6roItbCQkE3ggLzILRDRtK8U5D"
-    }
-    console.log(displayGIF)
-
-        //AJAX call for the buttons clicked
+    //queryURL 
+    
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+    animal + "&api_key=s9PHSc6roItbCQkE3ggLzILRDRtK8U5D&limit=10"
+   
+    //AJAX call for the buttons clicked
 
         $.ajax({
             url: queryURL,
             method: "GET"
-          }).then(function(response)
+          }
+          //Following data request
+          ).then(function(response)     {
+              console.log(queryURL)
+          }
+
+        }
