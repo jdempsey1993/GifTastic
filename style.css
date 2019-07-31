@@ -15,5 +15,9 @@ html {
 }
 
 button {
-    text-decoration-color: grey
+    text-decoration-color: grey;
+    display: inline;
+    list-style-type: none;
+    padding-right: 7px;
+    margin-right: 30px
 }
