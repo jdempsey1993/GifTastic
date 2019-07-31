@@ -53,6 +53,11 @@ $("button").on("click", function()   {
 
                 $("#gifHere").prepend(animalDiv)
 
+                //Jquery add class .gif to images 
+
+                $("<img>").addClass("gif")
+
+
             
             }
 
