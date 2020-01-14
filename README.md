@@ -1,2 +1,2 @@
 # GifTastic
-Week 6 HW Assignment
+Utilizes GIPHY API
